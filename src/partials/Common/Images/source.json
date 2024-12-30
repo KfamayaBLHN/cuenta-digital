@@ -1,0 +1,38 @@
+{
+  "AdministraSvg": {
+    "src": "/imagenes/icons/icons-svg/ICN_01_Administra_BNT_CD_BLHN@.svg",
+    "alt": "Administra",
+    "w": 157,
+    "h": 157
+  },
+  "AhorraSvg": {
+    "src": "/imagenes/icons/icons-svg/ICN_02_Ahorro_CD_BLHN@.svg",
+    "alt": "Ahorro",
+    "w": 157,
+    "h": 157
+  },
+  "Envía_recibeSvg": {
+    "src": "/imagenes/icons/icons-svg/ICN_03_Envia_Recibe_CD_BLHN@.svg",
+    "alt": "Envia_recibe",
+    "w": 157,
+    "h": 157
+  },
+  "RecibeSvg": {
+    "src": "/imagenes/icons/icons-svg/ICN_04_Recibe_TD_CD_BLHN@.svg",
+    "alt": "Recibe",
+    "w": 157,
+    "h": 157
+  },
+  "HazTusComprasSvg": {
+    "src": "/imagenes/icons/icons-svg/ICN_05_Compras_Online_CD_BLHN@.svg",
+    "alt": "HazTusCompras",
+    "w": 157,
+    "h": 157
+  },
+  "AcumulaSvg": {
+    "src": "/imagenes/icons/icons-svg/ICN_06_Acumula_Puntos_CD_BLHN@.svg",
+    "alt": "Acumula",
+    "w": 157,
+    "h": 157
+  }
+}

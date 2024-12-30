@@ -1,0 +1,35 @@
+
+.section-5{
+  background-color: white;
+  color: #4d4d4d;
+  padding: 50px 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2 {
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 1rem;
+}
+
+.section-5 .accordion-body {
+  padding: 0;
+  padding-top: 10px;
+}
+
+@media (min-width: $size-xl) {
+  .h2 {
+    font-size: 2rem !important;
+  }
+}
+
+

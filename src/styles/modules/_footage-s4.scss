@@ -1,0 +1,182 @@
+// - footage
+.footage-s4 {
+  @include wh(369px, 384px);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+// - bg
+.footage-s4 {
+  &:before {
+    @include wh(254.1px, 242.24px);
+    position: absolute;
+    top: 40px;
+    left: 62px;
+    content: '';
+    background: url('/imagenes/footage-4/bf-footage-green.webp') no-repeat center center;
+    background-size: 100%;
+  }
+}
+
+// - tarjeta
+.footage-s4 .tarjeta {
+  @include wh(164px, 113px);
+  z-index: 3;
+  position: absolute;
+  left: 178px;
+  top: 81px;
+}
+
+// mockup
+.footage-s4 .phone {
+  @include wh(180px, 323px);
+
+  background: url('/imagenes/footage-4/phone_compras-1x.webp') no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 93px;
+}
+
+// shadow
+.footage-s4 .phone::before {
+  @include wh(258.51px, 56px);
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -37px;
+  background: url('/imagenes/footage-4/shadow-phone@1x.webp') no-repeat center center;
+  background-size: cover;
+  transform: translateX(-50%);
+}
+
+// moneda - right - top n1
+.footage-s4 .coin-n1 {
+  position: absolute;
+  top: 39px;
+  left: 286px;
+  background: url('/imagenes/banner-footage/footage-coin-1@2x.webp') no-repeat center center;
+  background-size: cover;
+  display: block;
+  @include wh(32.68px, 35.3px);
+}
+
+// moneda - left - middle n1
+.footage-s4 .coin-n2 {
+  position: absolute;
+  top: 260px;
+  left: 53px;
+  background: url('/imagenes/banner-footage/footage-coin-2@2x.webp') no-repeat center center;
+  background-size: cover;
+  display: block;
+  @include wh(37.77px, 37.21px);
+}
+
+
+@media (min-width: $size-xl) {
+
+  // - footage
+  .footage-s4 {
+    @include wh(501px, 490px);
+    top: 38px;
+  }
+
+  // - tarjeta
+  .footage-s4 .tarjeta {
+    @include wh(278.19px, 187.66px);
+    left: 223px;
+    top: 143px;
+  }
+
+  // mockup
+  .footage-s4 .phone {
+    @include wh(296.3px, 531.69px);
+    top: 42px;
+    left: 102px;
+  }
+
+  // - bg
+  .footage-s4 {
+    &:before {
+      @include wh(420px, 400px);
+      top: 79px;
+      left: 50px;
+    }
+  }
+
+  // moneda - right - top n1
+  .footage-s4 .coin-n1 {
+    @include wh(82.4px, 51.52px);
+    top: 53px;
+    left: 414px;
+  }
+
+  // moneda - left - middle n1
+  .footage-s4 .coin-n2 {
+    @include wh(82.48px, 59.6px);
+    top: 354px;
+    left: -3px;
+  }
+}
+
+// retina images
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+  // - bg
+  .footage-s4::before {
+    background-image: url('/imagenes/footage-4/bf-footage-green.webp');
+  }
+
+  // mockup
+  .footage-s4 .phone {
+    background-image: url('/imagenes/footage-4/phone_compras-1x.webp');
+  }
+
+  // shadow
+  .footage-s4 .phone::before {
+    background-image: url('/imagenes/footage-4/shadow-phone@2x.webp');
+  }
+
+  .footage-s4 .coin-n1 {
+    background-image: url('/imagenes/footage-4/coin-1@2x.webp');
+  }
+
+  // moneda - left - middle n1
+  .footage-s4 .coin-n2 {
+    background-image: url('/imagenes/footage-4/coin-2@2x.webp');
+  }
+}
+
+
+// animations
+.section-4.inview-animations .animated-item.n5 {
+  transform: translateY(25px);
+  .phone {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
+    transition-delay: 1.5s;
+  }
+  .tarjeta {
+    opacity: 0;
+    transform: translateX(-15px);
+    transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
+    transition-delay: 1.8s;
+  }
+}
+.section-4.inview-animations[data-inview=true] .animated-item {
+  transform: translateY(0);
+  .phone {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .tarjeta {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,15 @@
+.banner {
+  background: linear-gradient(180deg, #018765 0%, #00583C 100%);
+}
+
+@media (min-width: $size-lg) {
+  .banner {
+    > .container-fluid {
+      .row {
+        min-height: 484px;
+      }
+    }
+  }
+}
+
+

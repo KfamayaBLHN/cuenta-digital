@@ -1,0 +1,148 @@
+.footage {
+  @include wh(282px, 323px);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+// person
+.footage .person {
+  position: relative;
+  top: 0;
+  left: 6px;
+  @include wh(276px, 323px);
+}
+
+// box n1
+.footage-box-1 {
+  background: url('/imagenes/banner-footage/footage-box-1@1x.webp') no-repeat center center;
+  background-size: cover;
+  @include wh(59px, 57px);
+  position: absolute;
+  top: 22px;
+  left: 14px;
+  z-index: -1;
+}
+
+// box n2
+.footage-box-2 {
+  background: url('/imagenes/banner-footage/footage-box-2-mobile@1x.webp') no-repeat center center;
+  background-size: 100% auto;
+  @include wh(65px, 62px);
+  position: absolute;
+  top: 57px;
+  left: 189px;
+  box-shadow: 8px 8px 15px rgba(#000, 0.15);
+  border-radius: 2px;
+  
+}
+
+// coin n1 
+.footage-coin-1 {
+  @include wh(47.11px, 52.34px);
+  background: url('/imagenes/banner-footage/footage-coin-1@1x.webp') no-repeat center center;
+  background-size: 100% auto;
+  position: absolute;
+  top: 223px;
+  left: 218px;
+}
+
+// coin n2
+.footage-coin-2 {
+  @include wh(47.68px, 56.07px);
+  background: url('/imagenes/banner-footage/footage-coin-2@1x.webp') no-repeat center center;
+  background-size: 100% auto;
+  position: absolute;
+  top: 230px;
+  left: -10px;
+}
+
+// arrow
+.footage-arrow {
+  @include wh(37.68px, 46.07px);
+  background: url('/imagenes/banner-footage/footage-arrow@1x.webp') no-repeat center center;
+  background-size: 100% auto;
+  position: absolute;
+  top: 73.37px;
+  left: 143.07px;
+}
+
+
+// Desktop version
+@media (min-width: $size-xl) {
+  .footage {
+    @include wh(422px, 526px);
+  }
+
+  // person
+  .footage .person {
+    @include wh(530.49px, 626.47px);
+    left: 12px;
+  }
+
+  // box n1
+  .footage-box-1 {
+    @include wh(117px, 111px);
+    top: 50px;
+    left: 4PX;
+  }
+
+  // box n1
+  .footage-box-2 {
+    background-image: url('/imagenes/banner-footage/footage-box-2@1x.webp');
+    left: 363px;
+    top: 140px;
+    @include wh(142px, 125px);
+    box-shadow: none;
+  }
+
+  // coin n1 
+  .footage-coin-1 {
+    @include wh(67.48px, 41.24px);
+    top: 459px;
+    left: 435px;
+  }
+
+  // coin n2
+  .footage-coin-2 {
+    @include wh(70px, 54px);
+    left: 0;
+    top: 507px;
+    
+  }
+
+  .footage-arrow {
+    @include wh(71.06px, 64.23px);
+    top: 187px;
+    left: 288px;
+  }
+}
+
+
+
+// retina images
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .footage-box-1 {
+    background-image: url('/imagenes/banner-footage/footage-box-1@2x.webp');
+  }
+  .footage-box-2 {
+    background-image: url('/imagenes/banner-footage/footage-box-2-mobile@2x.webp');
+    box-shadow: none;
+  }
+  .footage-coin-1 {
+    background-image: url('/imagenes/banner-footage/footage-coin-1@2x.webp');
+  }
+  .footage-coin-2 {
+    background-image: url('/imagenes/banner-footage/footage-coin-2@2x.webp');  
+  }
+  .footage-arrow {
+    background-image: url('/imagenes/banner-footage/footage-arrow@2x.webp');
+  }
+  @media (min-width: $size-xl) {
+    .footage-box-2 {
+      background-image: url('/imagenes/banner-footage/footage-box-2@2x.webp');
+    }
+  }
+}

@@ -1,0 +1,371 @@
+.calc {
+  background-color: #fff;
+}
+
+.results_container {
+  // background-color: #f4f4f4;
+}
+
+.center_box {
+  flex: 1;
+}
+
+.calc table tr td {
+  padding: 4px 8px;
+  border-bottom: 1px solid #cfcfcf !important;
+}
+
+.btn_collapse {
+  background: none transparent;
+  border: none;
+  border-bottom: 1px solid #cecece;
+  padding: 8px 24px 8px 8px;
+  width: 100%;
+  position: relative;
+
+  &[aria-expanded="true"] {
+    background-color: #cecece;
+
+    &:before {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+
+  &:before {
+    content: "";
+    top: 50%;
+    margin-top: -3.5px;
+    width: 0px;
+    height: 0px;
+    right: 8px;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-top: 7px solid #212529;
+    display: block;
+    position: absolute;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+
+  }
+}
+
+.resultados_table_container > div {
+  width: 100%;
+}
+@media screen and (min-width: 576px ) {
+  .resultados_table_container > div {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 768px ) {
+  .resultados_table_container > div {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px ) {
+  .resultados_table_container > div {
+    width: 75%;
+  }
+}
+
+
+
+// .calc {
+//   background-color: #f2f2f2;
+//   h4 {
+//     font-weight: 500;
+//     font-size: 24px;
+//   }
+//   .input-group-prepend {
+//     font-size: 0;
+//     .form-control,
+//     .input-group-text {
+//       width: 50%;
+//       display: inline-block;
+//       display: flex;
+//       justify-content: center;
+//     }
+//   }
+//   .btn {
+//     color: #fff;
+//     background-color: #018765;
+//     border-color: #018765;
+//     height: 45px;
+//     width: 60%;
+//     padding: 0 1rem;
+//     border-radius: 0;
+//     line-height: 45px;
+//     &:hover {
+//       background-color: #00583c;
+//       border-color: #00583c;
+//       color: #fff;
+//     }
+//   }
+// }
+
+// .calc .box-info {
+//   background-color: #e6e6e6;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   .titles {
+//     font-weight: 700;
+//     font-size: 16px;
+//   }
+//   .left {
+//     text-align: left;
+//   }
+//   .right {
+//     font-size: 16px;
+//     font-weight: 400;
+//     text-align: right;
+//     padding-right: 10px;
+//   }
+//   .table td,
+//   .table th {
+//     border-top: 1px solid #e6e6e6;
+//     border-bottom: 1px solid #cfcfcf !important;
+//   }
+//   h1 {
+//     font-size: 40px;
+//   }
+//   .result {
+//     color: #086;
+//     font-weight: 700;
+//   }
+// }
+
+// .form-control {
+//   border-radius: 0;
+// }
+// .input-group-text {
+//   border-radius: 0;
+//   text-align: center;
+// }
+
+// .form-check {
+//   padding-left: 0;
+//   .form-check-label {
+//     margin-left: 0;
+//     margin-bottom:5px;
+//   }
+//   .switch-content {
+//     position: relative;
+//     display: block;
+//     width: 100%;
+//     height: 38px;
+//     border-radius: 3px;
+//   }
+//   input {
+//     opacity: 0;
+//     width: 0;
+//     height: 0;
+//     width: 100%;
+//     margin: 0;
+//     height: 100%;
+//     z-index: 1;
+//     left: 0;
+//     left: 0;
+//     cursor: pointer;
+//   }
+//   .switch {
+//     position: absolute;
+
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     -webkit-transition: .4s;
+//     transition: .4s;
+
+//     &:before,
+//     &:after {
+//       position: absolute;
+//       top: 0;
+//       width: 50%;
+//       height: 100%;
+//       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+//       line-height: 38px;
+//       text-align: center;
+//       cursor: pointer;
+//     }
+//     &:before {
+//       left: 0;
+//       content: 'Si';
+//       background: #e6e6e6;
+//       color: #495057;
+//       border-radius: 3px 0 0 3px;
+//     }
+//     &:after {
+//       left: 50%;
+//       Content: 'No';
+//       background:#00b774;
+//       color: #fff;
+//       border-radius: 0 3px 3px 0;
+//     }
+
+//   }
+
+
+
+//   input:checked + .switch {
+//     &:before {
+//       background:#00b774;
+//       color: #fff;
+//     }
+//     &:after {
+//       background: #e6e6e6;
+//       color: #495057;
+//     }
+//   }
+// }
+// .msj-exception {
+//   padding-bottom: 0;
+//   display: block;
+// }
+// .result p {
+//   font-size: 14px;
+// }
+
+// // forms elements 
+// .calc {
+//   .btn {
+//     font-size: 16px;
+//   }
+//   font-size: 16px;
+//   .form-group {
+//     font-size: 16px;
+//   }
+//   label {
+//     font-size: 16px;
+//   }
+//   .form-control {
+//     height: 36px;
+//     font-size: 16px;
+//   }
+//   .input-group-text {
+//     font-size: 16px;;
+//   }
+//   .txt-16 {
+//     font-size: 16px;
+//   }
+//   .txt-dark {
+//     color: #212529;
+//   }
+//   .txt-700 {
+//     font-weight: 700;
+//   }
+//   .txt-900 {
+//     font-weight: 900;
+//   }
+//   .box-label-monto-prestamo {
+//     p {
+//       font-weight: bolder;
+//     }
+//   }
+//   .box-label-title-comisiones {
+//     p {
+//       font-weight: bolder;
+//     }
+//   }
+//   .box-table-container {
+//     // padding-left: 24px;
+//     // padding-right: 24px;
+//     table {
+//       margin-bottom: 0;
+//     }
+//     td {
+//       padding-top: 5px;
+//       padding-bottom: 5px;
+//     }
+//   }
+
+//   // box-cuota-result
+//   .box-cuota-result {
+//     p {
+//       font-weight: bolder;
+//     }
+//     h1 {
+//       font-weight: 500;
+//       padding-top: 16px;
+//       padding-bottom: 8px;
+//     }
+//   }
+
+//   // box tcea
+//   .box-tcea {
+//     padding-top: 32px;
+//     padding-bottom: 16px;
+//     p {
+//       font-weight: bolder;
+//     }
+//   }
+// }
+
+// // group toggle - switch
+// .calc .btn-group-toggle {
+//   width: 100%;
+//   .btn-secondary {
+//     color: #495057;
+//     background-color: #e6e6e6;
+//     border-color: #e6e6e6;
+//     height: 38px;
+//     padding: 0;
+//     line-height: 38px;
+//   }
+//   .btn-secondary.active {
+//     color: #fff;
+//     background-color: #00b774;
+//     border-color: #00b774;
+//   }
+
+// }
+// .calc.lafise-forms {
+//   .form-check input[type=checkbox] {
+//     height: 100%;
+//     display: block;
+//     width: 100%;
+//   }
+// }
+
+
+// // collapsable
+// .calc .titles button {
+//   width: 100%;
+//   border: none;
+//   position: relative;
+//   background-color: #cecece;
+//   color: #212529;
+//   padding: 5px 26px 5px 15px;
+//   border: none;
+//   outline: none;
+//   box-shadow: none;
+//   text-align: left;
+//   &.collapsed {
+//     background: none transparent;
+//     &:before {
+//       transform: rotate(0deg);
+//     }
+//   }
+// }
+// .calc .titles button:before {
+//   content: "";
+//   top: 13px;
+//   width: 0px;
+//   height: 0px;
+//   right: 8px;
+//   border-left: 6px solid transparent;
+//   border-right: 6px solid transparent;
+//   border-top: 7px solid #212529;
+//   display: block;
+//   position: absolute;
+//   transition: 0.3s all;
+//   transform: rotate(180deg);
+// }
+
+// .disclaimer {
+//   p {
+//     font-size: 15px;
+//     line-height: 21px;
+//   }
+// }

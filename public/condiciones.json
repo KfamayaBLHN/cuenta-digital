@@ -1,0 +1,54 @@
+{
+  "porcentaje_financiamiento_max": 0.8,
+  "porcentaje_financiamiento_min": 0.2,
+  "tasa": 0.0675,
+  "porcentaje_prima_max": 0.9,
+  "porcentaje_prima_min": 0.2,
+  "tasa_seguro_vida": 5.9935,
+  "tarifa_seguro_patromonial": 0.0017,
+  "tasa_seguro_patrimonial": 0.8,
+  "tasa_recargo_fraccionamiento": 0.09,
+  "tasa_desempleo_fraccionamiento": 0.09,
+  "tasa_desempleo": 0.0425200,
+  "tasa_comision_bancaria": 0.015,
+  "tasa_cambio": 522,
+  "table_constitucion_hipoteca": [
+    {"min": 0, "max": 11000000, "tasa": 0.02},
+    {"min": 11000000, "max": 16500000, "tasa": 0.015},
+    {"min": 16500000, "max": 33000000, "tasa": 0.0125},
+    {"min": 33000000,"max": 200000000,"tasa": 0.01}
+  ],
+  "tabla_precio_venta_inmueble": [
+    { "min": 0, "max": 11000000, "tasa": 0.02 },
+    { "min": 11000000,"max": 16500000,"tasa": 0.015 },
+    { "min": 16500000,"max": 33000000,"tasa": 0.0125 },
+    { "min": 33000000,"max": 200000000,"tasa": 0.01 }
+  ],
+  "tabla_colegio_abogados": [
+    { "min": 0, "max": 250000, "monto": 0 },
+    { "min": 250000.01, "max": 1000000, "monto": 1100 },
+    { "min": 1000000.01, "max": 5000000, "monto": 2200 },
+    { "min": 5000000.01, "max": 25000000, "monto": 5500 },
+    { "min": 25000000.01, "max": 50000000, "monto": 11000 },
+    { "min": 50000000.01, "max": 100000000, "monto": 16500 },
+    { "min": 100000000.01, "max": 500000000, "monto": 27500 },
+    { "min": 500000000.01, "max": 1000000000, "monto": 55000 }
+  ],
+  "tabla_timbres_fiscales": [
+    { "min": "0.00", "max": "25,000.00", "monto": "12.50" },
+    { "min": "25,000.01", "max": "75,000.00", "monto": "25.50" },
+    { "min": "75,000.01", "max": "100,000.00", "monto": "31.25" },
+    { "min": "100,000.01", "max": "200,000.00", "monto": "62.50" },
+    { "min": "200,000.01", "max": "500,000.00", "monto": "125.00" },
+    { "min": "500,000.01", "max": "1,000,000.00", "monto": "156.25" },
+    { "min": "1,000,000.01", "max": "1,500,000.00", "monto": "312.50" },
+    { "min": "1,500,000.01", "max": "200,500,000.01", "monto": "625.00" }
+  ],
+  "tabla_honorarios_por_tranpaso": [
+    {"min":0.00,"max":11000000, "tasa": 0.02},
+    {"min":11000000.01,"max": 16500000.00, "tasa":0.015},
+    {"min":16500000.01,"max": 33000000.00, "tasa":0.0125},
+    {"min":33000000.01,"max": 156600000.00, "tasa": 0.01}
+  ]
+
+}
